@@ -5,6 +5,8 @@ import './components/NavBar/Navbar.css'
 import Cards from './components/Cards/Cards'
 import Navbar from './components/NavBar/Navbar'
 import Carrousel from './components/Carrousel/Carrousel'
+import ItemsListContainer from './components/ItemListContainer'
+import './components/ItemsListContainer.css'
 
 
 function App() {
@@ -14,9 +16,9 @@ function App() {
     <div className="App">
       <div>
         <Navbar/>
+        <ItemsListContainer/>
         <Carrousel/>
         <Cards/>
-       
       </div>
     </div>
   )
