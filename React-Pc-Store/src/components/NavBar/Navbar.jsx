@@ -1,9 +1,11 @@
 import React from 'react'
 import CartWidget from './CartWidget';
+import{Link, NavLink} from 'react-router-dom';
+
 
 function Navbar(){
         return(
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-lg p-3">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -11,15 +13,13 @@ function Navbar(){
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         
                     <div className="navbar-nav">
+                        <NavLink to='/' className='nav-link'>INICIO</NavLink>
+                        <NavLink to='/categoria/notebooks' className='nav-link'>NOTEBOOKS</NavLink>
+                        <NavLink to='/categoria/pcs' className='nav-link'>PC'S</NavLink>
+                        <NavLink to='/categoria/componentes de pc' className='nav-link'>COMPONENTES DE PC</NavLink>
+                        <NavLink to='/categoria/sillas' className='nav-link'>SILLAS</NavLink>
+                        <NavLink to='/categoria/contacto' className='nav-link'>CONTACTANOS</NavLink>
                         <CartWidget/>
-                        <a className="nav-link active" aria-current="page" href="#">INICIO</a>
-                        <a className="nav-link" href="#">CATEGORIAS</a>
-                        <a className="nav-link" href="#">CONSOLAS</a>
-                        <a className="nav-link" href="#">CELULARES</a>
-                        <a className="nav-link" href="#">SERVIDORES</a>
-                        <a className="nav-link" href="#">NOTEBOOKS</a>
-                        <a className="nav-link" href="#">SMART TV</a>
-                        <a className="nav-link" href="#">DRONES</a>
                     </div>
                     </div>
                 </div>

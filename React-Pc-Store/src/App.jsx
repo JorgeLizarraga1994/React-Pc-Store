@@ -1,26 +1,31 @@
 import { useState } from 'react'
-import './App.css'
-import './components/Cards/Cards.css'
-import './components/NavBar/Navbar.css'
-import Cards from './components/Cards/Cards'
+import {BrowserRouter , Routes, Route, Navigate} from 'react-router-dom'
 import Navbar from './components/NavBar/Navbar'
 import Carrousel from './components/Carrousel/Carrousel'
-import ItemsListContainer from './components/ItemListContainer'
-import './components/ItemsListContainer.css'
-
+import { ItemListContainer } from './components/Container/ItemListContainer/ItemListContainer'
+import CartContainer from './components/Container/CartContainer/CartContainer'
+import ItemDetailContainer from './components/Container/ItemDetailContainer/ItemDetailContainer'
+import './components/Container/ItemListContainer/ItemListContainer.css'
+import './App.css'
+import './components/NavBar/Navbar.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <div className="App">
-      <div>
-        <Navbar/>
-        <ItemsListContainer/>
-        <Carrousel/>
-        <Cards/>
+    <BrowserRouter>
+      <div className='App'>
+              <Navbar/>
+              <Carrousel/>
+            <Routes>
+              <Route path="/" element={<ItemListContainer />} />
+              <Route path="/categoria/:id" element={<ItemListContainer />} />
+              <Route path="/Carrito" element={< CartContainer />} />
+              <Route path="/Detalle/:id" element={<ItemDetailContainer />} /> 
+              <Route path="*" element={<Navigate to='/' />} />
+            </Routes>    
       </div>
-    </div>
+    </BrowserRouter>
   )
 }
 

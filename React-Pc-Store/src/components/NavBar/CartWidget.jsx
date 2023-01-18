@@ -1,9 +1,16 @@
 import React from 'react';
+import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
   
   return (
-        <img src="./image/react.svg" alt="" />
+    <>
+    <Link to='/Carrito'><a href="#"><img className='tamañoImg' src="../../../shoppingcart1_114878.svg" alt="" /></a></Link>
+      
+      
+    
+    </>
   );
 };
 
