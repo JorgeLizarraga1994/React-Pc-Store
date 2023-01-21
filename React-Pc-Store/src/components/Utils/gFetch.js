@@ -22,6 +22,56 @@ let productos = [
         imagen: '../../src/images/id3.jpg'
     },
     {
+        id: 16,
+        categoria: 'componentes de pc',
+        titulo: 'Micro AMD Ryzen 5 4500 4.1 Ghz AM4',
+        precio: '$43.386',
+        imagen: '../../src/images/id16.jpg'
+    },
+    {
+        id: 17,
+        categoria: 'componentes de pc',
+        titulo: 'Micro AMD Ryzen 7 5700G 4.6 Ghz AM4',
+        precio: '$96.758',
+        imagen: '../../src/images/id17.jpg'
+    }
+    ,
+    {
+        id: 18,
+        categoria: 'componentes de pc',
+        titulo: 'Micro AMD Ryzen 9 5900X 4.8 Ghz AM4',
+        precio: '$150.113',
+        imagen: '../../src/images/id18.jpg'
+    },
+    {
+        id: 19,
+        categoria: 'componentes de pc',
+        titulo: 'Memoria Ram Patriot Viper Steel Series RGB 16GB 3200 Mhz DDR4',
+        precio: '$25.197',
+        imagen: '../../src/images/id19.jpg'
+    },
+    {
+        id: 20,
+        categoria: 'componentes de pc',
+        titulo: 'Memoria Ram OEM 32GB 3200 Mhz DDR4 BULK',
+        precio: '$38.303',
+        imagen: '../../src/images/id20.jpg'
+    },
+    {
+        id: 21,
+        categoria: 'componentes de pc',
+        titulo: 'Placa de Video PALIT Nvidia Geforce GTX 1660 Ti STORMX 6GB GDDR6',
+        precio: '$101.794',
+        imagen: '../../src/images/id21.jpg'
+    },
+    {
+        id: 22,
+        categoria: 'componentes de pc',
+        titulo: 'Placa de Video GeForce RTX 3060 Ti 8GB EAGLE OC GDDR6',
+        precio: '$196.714',
+        imagen: '../../src/images/id22.jpg'
+    },
+    {
         id: 2,
         categoria: 'destacados',
         titulo: 'Monitor Led 28" Gaming UHD',
@@ -69,7 +119,79 @@ let productos = [
         titulo: 'PC Gamer Armada Completa Intel I7 13700KF 32GB 1TB NVME 2TB HDD RX 6950XT + Mouse de Regalo',
         precio: '$860.423',
         imagen: '../../src/images/id11.jpg'
+    },
+    {
+        id: 12,
+        categoria: 'notebooks',
+        titulo: 'Notebook Chromebook Lenovo 100e 11.6" AMD A4 9120c 4GB RAM 32GB EMMC',
+        precio: '$63.626',
+        imagen: '../../src/images/id12.jpg'
+    },
+    {
+        id: 13,
+        categoria: 'notebooks',
+        titulo: 'Notebook PCBOX FIRE! 3 14" Intel I3 1005G1 8GB Ram 256Gb SSD + Zion-N + M365 W10',
+        precio: '$129.327',
+        imagen: '../../src/images/id13.jpg'
+    },
+    {
+        id: 14,
+        categoria: 'notebooks',
+        titulo: 'Notebook PCBOX FIRE! 5 14" Intel I5 1035G 8GB Ram 256Gb SSD Win 11',
+        precio: '$172.417',
+        imagen: '../../src/images/id14.jpg'
+    },
+    {
+        id: 15,
+        categoria: 'notebooks',
+        titulo: 'Notebook HP 445 14" AMD Ryzen 5 5600U 8GB Ram 256GB SSD W10 PRO',
+        precio: '$273.885',
+        imagen: '../../src/images/id15.jpg'
+    },
+    {
+        id: 23,
+        categoria: 'sillas',
+        titulo: 'Silla Gamer Antec T1 Sport Black Yellow',
+        precio: '$76.058',
+        imagen: '../../src/images/id23.jpg'
+    },
+    {
+        id: 24,
+        categoria: 'sillas',
+        titulo: 'Silla Gamer Genesis Nitro 550 Black',
+        precio: '$82.237',
+        imagen: '../../src/images/id24.jpg'
+    },
+    {
+        id: 25,
+        categoria: 'sillas',
+        titulo: 'Silla Gamer Genesis Nitro 550 Black–Red',
+        precio: '$82.237',
+        imagen: '../../src/images/id25.jpg'
+    },
+    {
+        id: 26,
+        categoria: 'sillas',
+        titulo: 'Silla Gamer Aerocool Duke Steel Blue - OUTLET CAJA ABIERTA',
+        precio: '$105.524',
+        imagen: '../../src/images/id26.jpg'
+    },
+    {
+        id: 27,
+        categoria: 'sillas',
+        titulo: 'Silla Gamer Genesis Nitro 890 Black',
+        precio: '$112.837',
+        imagen: '../../src/images/id27.jpg'
+    },
+    {
+        id: 28,
+        categoria: 'sillas',
+        titulo: 'Silla Gamer Genesis Nitro 950 Black',
+        precio: '$126.225',
+        imagen: '../../src/images/id28.jpg'
     }
+    
+
     
 ]
 

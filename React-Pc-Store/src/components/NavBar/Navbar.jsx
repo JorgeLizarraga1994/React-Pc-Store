@@ -14,8 +14,8 @@ function Navbar(){
                         
                     <div className="navbar-nav">
                         <NavLink to='/' className='nav-link'>INICIO</NavLink>
-                        <NavLink to='/categoria/notebooks' className='nav-link'>NOTEBOOKS</NavLink>
-                        <NavLink to='/categoria/pcs' className='nav-link'>PC'S</NavLink>
+                        <NavLink to='/categoria/notebooks' className='nav-link' translate='no'>NOTEBOOKS</NavLink>
+                        <NavLink to='/categoria/pcs' className='nav-link' translate='no'>PC'S</NavLink>
                         <NavLink to='/categoria/componentes de pc' className='nav-link'>COMPONENTES DE PC</NavLink>
                         <NavLink to='/categoria/sillas' className='nav-link'>SILLAS</NavLink>
                         <NavLink to='/categoria/contacto' className='nav-link'>CONTACTANOS</NavLink>
