@@ -2,10 +2,10 @@ import { useState } from 'react'
 import {BrowserRouter , Routes, Route, Navigate} from 'react-router-dom'
 import Navbar from './components/NavBar/Navbar'
 import Carrousel from './components/Carrousel/Carrousel'
-import { ItemListContainer } from './components/Container/ItemListContainer/ItemListContainer'
-import CartContainer from './components/Container/CartContainer/CartContainer'
-import ItemDetailContainer from './components/Container/ItemDetailContainer/ItemDetailContainer'
-import './components/Container/ItemListContainer/ItemListContainer.css'
+import { CardListContainer } from './components/Container/CardListContainer/CardListContainer'
+import CartDetail from './components/Container/CartDetail/CartDetail'
+import CardDetailContainer from './components/Container/CardDetailContainer/CardDetailContainer'
+import './components/Container/CardListContainer/CardListContainer.css'
 import './App.css'
 import './components/NavBar/Navbar.css'
 
@@ -18,10 +18,10 @@ function App() {
               <Navbar/>
               <Carrousel/>
             <Routes>
-              <Route path="/" element={<ItemListContainer />} />
-              <Route path="/categoria/:id" element={<ItemListContainer />} />
-              <Route path="/Carrito" element={< CartContainer />} />
-              <Route path="/Detalle/:id" element={<ItemDetailContainer />} /> 
+              <Route path="/" element={<CardListContainer />} />
+              <Route path="/categoria/:id" element={<CardListContainer />} />
+              <Route path="/Carrito" element={< CartDetail />} />
+              <Route path="/Detalle/:id" element={<CardDetailContainer />} /> 
               <Route path="*" element={<Navigate to='/' />} />
             </Routes>    
       </div>

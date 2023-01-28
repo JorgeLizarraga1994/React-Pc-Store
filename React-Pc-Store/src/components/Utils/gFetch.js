@@ -195,10 +195,10 @@ let productos = [
     
 ]
 
-export const gFetch = () => {
+export const gFetch = (id) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(productos)
+            resolve(id ? productos.find(prod => prod.id === id) : productos)
         },1000)
         
     })
