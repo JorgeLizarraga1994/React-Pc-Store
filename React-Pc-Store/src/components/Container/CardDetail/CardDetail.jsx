@@ -1,16 +1,29 @@
-/* import React from 'react'
+import React from 'react'
+import Contador from '../contador/contador'
 
 const CardDetail = ({producto}) => {
+    const onAdd = (cant) => {
+        console.log(cant)
+}       
+
 return (
     <div className="container">
         <div className="row">
-            <div className="col-6">
-                <h2> {producto.titulo} </h2>
+            <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-7 " key= {producto.id}>
+                <img src= {producto.imagen} />
             </div>
-            <div className="col-6"></div>
         </div>
+            <div className="col-4">
+                <div className='card-body  '>
+                    <center>
+                        <h4 className='text-light'>{producto.titulo} </h4>
+                        <h3 className='text-light'>{producto.precio}</h3>
+                        <Contador onAdd = {onAdd} />
+                    </center>
+                </div>
+            </div>
     </div>
 )
 }
 
-export default CardDetail */
+export default CardDetail

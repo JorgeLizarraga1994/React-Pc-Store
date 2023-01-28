@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import CardList from "../CardList/CardList";
 
 
+
 export const CardListContainer = ( ) => {
 
     const [productos, setProductos] = useState([]);
@@ -35,8 +36,8 @@ export const CardListContainer = ( ) => {
     return (
         <div className="container d-flex pt-5">
             <div className="row">  
-                {   loading ? <h1>Cargando...</h1> :
-                        <CardList  key = {productos.key} productos = {productos}/> 
+                {   loading ? <h1>Cargando...</h1> : <CardList  key = {productos.key} productos = {productos}/> 
+                    
                 }
             </div>
         </div>    
