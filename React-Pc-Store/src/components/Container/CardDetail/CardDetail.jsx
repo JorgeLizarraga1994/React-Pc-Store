@@ -1,10 +1,17 @@
-import React from 'react'
+import { useContext } from 'react'
+import { CartContext, useCartContext } from '../../../Context/CartContext'
 import Contador from '../contador/contador'
 
+
 const CardDetail = ({producto}) => {
+    const { agregarAlCarrito, cartList } = useCartContext()
     const onAdd = (cant) => {
         console.log(cant)
+      //Agregar al carrito
+    agregarAlCarrito({...producto, cantidad: cant})  
 }       
+
+    
 
 return (
     <div className="container">
@@ -18,7 +25,7 @@ return (
                     <center>
                         <h4 className='text-light'>{producto.titulo} </h4>
                         <h3 className='text-light'>{producto.precio}</h3>
-                        <Contador onAdd = {onAdd} />
+                        <Contador onAdd={onAdd}/>
                     </center>
                 </div>
             </div>

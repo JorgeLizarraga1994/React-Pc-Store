@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 
-const Contador = ( {inicial = 1, cantidadStock = 20, onAdd}) => {
+export const Contador = ( {inicial = 1, cantidadStock = 20, onAdd}) => {
     const [count, setCount] = useState(inicial)
 
     const handleSuma = () => {
@@ -17,7 +17,7 @@ const Contador = ( {inicial = 1, cantidadStock = 20, onAdd}) => {
     }
 
     const handleOnAdd = () => {
-        onAdd(count)
+        onAdd(`ha seleccionado la cantidad de ${count}`)
         }
 
   return (

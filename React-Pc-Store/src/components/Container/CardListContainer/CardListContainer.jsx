@@ -1,9 +1,10 @@
 import React from "react";
 import {useState , useEffect} from 'react'
-import { gFetch } from "../../Utils/gFetch";
 import { useParams } from 'react-router-dom';
 import CardList from "../CardList/CardList";
 
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+import { gFetch } from "../../Utils/gFetch";
 
 
 export const CardListContainer = ( ) => {
@@ -12,7 +13,32 @@ export const CardListContainer = ( ) => {
     const [loading, setLoading] = useState(true);
     const{ id } = useParams()
 
-    useEffect( () => {
+
+    useEffect (() => {
+        const db = getFirestore()
+        const queryCollection = collection(db, 'items')
+        if (id){
+            const queryCollectionFilter = query(queryCollection , where('categoria', '==', id))
+
+            getDocs(queryCollectionFilter)
+            .then(respuestaPromesa => {
+                setProductos(respuestaPromesa.docs.map(prod => ({id: prod.id, ...prod.data() })))
+            })
+            .catch ( err => console.log(err))
+            .finally (()=> setLoading(false))
+        }else{
+            getDocs(queryCollection)
+            .then(respuestaPromesa => {
+                setProductos(respuestaPromesa.docs.map(prod => ({id: prod.id, ...prod.data() })))
+            })
+            .catch ( err => console.log(err))
+            .finally (()=> setLoading(false))
+        }
+        },[])
+
+        
+
+     /* useEffect( () => {
         if (id) {
             gFetch()
                 .then(respuestaPromesa => {
@@ -31,7 +57,7 @@ export const CardListContainer = ( ) => {
         }
     }, [id])
 
-    console.log(id)
+    console.log(id) */
     
     return (
         <div className="container d-flex pt-5">
@@ -41,6 +67,6 @@ export const CardListContainer = ( ) => {
                 }
             </div>
         </div>    
-        )
+        ) 
 }
 
