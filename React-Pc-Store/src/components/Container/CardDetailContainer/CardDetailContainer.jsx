@@ -7,7 +7,6 @@ import CardDetail from "../CardDetail/CardDetail";
 const CardDetailContainer = ( ) => {
   const [producto, setProducto] = useState([])
   const {id} = useParams()
-  console.log(id)
 
    useEffect (() => {
     const db = getFirestore()
@@ -16,7 +15,7 @@ const CardDetailContainer = ( ) => {
     .then(results => setProducto ({id: results.id, ...results.data()}))
     .catch(err => console.error(err)) 
   }, [])
-  console.log(producto)
+
   return (
     <CardDetail producto={producto}/>
   )

@@ -10,7 +10,6 @@ const CardDetail = ({producto}) => {
     const { agregarAlCarrito} = useCartContext()
 
     const onAdd = (cant) => {
-        console.log(cant)
     agregarAlCarrito({...producto, cantidad: cant})
     setIsInCount(false)  
 }       
