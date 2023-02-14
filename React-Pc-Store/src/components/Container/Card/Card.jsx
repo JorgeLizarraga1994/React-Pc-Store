@@ -6,8 +6,8 @@ export const Card = ({producto}) => {
             <Link to={`/Detalle/${producto.id}`}><div className="card text-center bg-dark">
                     <img src= {producto.imagen} />
                 <div className='card-body text-light '>
-                    <h4 className="card-title" >{producto.titulo} </h4>
-                    <p className="card-text">{producto.precio}</p>
+                    <h2 className="card-text"> ${producto.precio}</h2>
+                    <h6 className="card-title" >{producto.titulo} </h6>
                 </div>
                 </div>
             </Link>

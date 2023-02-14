@@ -8,6 +8,10 @@
     box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273); 
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
+    color: white;
+}
+.nav-link{
+    color: white;
 }
 
 .tamañoImg{

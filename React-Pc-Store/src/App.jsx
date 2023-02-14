@@ -10,6 +10,12 @@ import './App.css'
 import './components/NavBar/Navbar.css'
 import { CartContext, CartContextProvider } from './Context/CartContext'
 import CartContainer from './components/Container/CartContainer/CartContainer'
+import { Toaster, toast} from 'react-hot-toast'
+import Footer from './components/Footer/Footer'
+import Formulario from './components/Formulario/Formulario'
+
+
+
 
 function App() {
   
@@ -17,19 +23,32 @@ function App() {
   return (
     <CartContextProvider>
       <BrowserRouter>
-        <div className='App'>
+            <div className='App'>
                 <Navbar/>
                 <Carrousel/>
-              <Routes>
-                <Route path="/" element={<CardListContainer />} />
-                <Route path="/categoria/:id" element={<CardListContainer />} />
-                <Route path="/Carrito" element={< CartContainer />} />
-                <Route path="/Detalle/:id" element={<CardDetailContainer />} /> 
-                <Route path="*" element={<Navigate to='/' />} />
-              </Routes>    
-        </div>
+                <Toaster position= 'top-right' 
+                          toastOptions={{
+                            // Define default options
+                            className: '',
+                            duration: 2000,
+                            style: {
+                              background: '#873A5E',
+                              color: '#D9D0DE',
+                            },
+                          }}
+                />
+                <Routes>
+                  <Route path="/" element={<CardListContainer />} />
+                  <Route path="/categoria/:id" element={<CardListContainer />} />
+                  <Route path="/Carrito" element={< CartContainer />} />
+                  <Route path="/Detalle/:id" element={<CardDetailContainer />} /> 
+                  <Route path="*" element={<Navigate to='/' />} />
+                  <Route path="/categoria/contacto" element={<Formulario/>} />
+                </Routes>
+            </div>
+        <Footer/>
       </BrowserRouter>
-      </CartContextProvider> 
+    </CartContextProvider> 
   )
 }
 

@@ -1,4 +1,4 @@
-import { doc, getFirestore } from "firebase/firestore";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 import { useState , useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { gFetch } from "../../Utils/gFetch";
@@ -10,14 +10,14 @@ const CardDetailContainer = ( ) => {
   const {id} = useParams()
   console.log(id)
 
-  useEffect (() => {
+   useEffect (() => {
     const db = getFirestore()
-    const queryDoc = doc(db, 'items', id)
+    const queryDoc = doc(db, 'productos', id)
     getDoc(queryDoc)
-    .then(result => setProducto ({id: result.id, ...result.data()}))
+    .then(results => setProducto ({id: results.id, ...results.data()}))
     .catch(err => console.error(err)) 
-     /* gFetch(id)
-    .then(resp => setProducto(resp))  */
+       /*gFetch(id)
+    .then(resp => setProducto(resp)) */ 
     
   }, [])
   console.log(producto)

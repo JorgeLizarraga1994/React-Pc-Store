@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import swal from 'sweetalert'
+import { Toaster, toast} from 'react-hot-toast'
+
 
 
 export const Contador = ( {inicial = 1, cantidadStock = 20, onAdd}) => {
@@ -17,11 +20,14 @@ export const Contador = ( {inicial = 1, cantidadStock = 20, onAdd}) => {
     }
 
     const handleOnAdd = () => {
-        onAdd(`ha seleccionado la cantidad de ${count}`)
-        }
+        onAdd(count)
+        toast("producto agregado al carrito")
+        /* swal({title: "" ,
+            icon: "success"}) */
+        }   
 
-  return (
-    <div className='card'>
+return (
+    <div className='card m-4'>
         <div className='card-body row'>
             <div className='col'>
                 <button className='btn btn-outline-dark w-100' onClick={handleSuma}> + </button>
@@ -37,6 +43,7 @@ export const Contador = ( {inicial = 1, cantidadStock = 20, onAdd}) => {
         </div>
         <div className='card-footer'>
             <button className='btn btn-outline-dark w-100' onClick={handleOnAdd}>Agregar al carrito</button>
+            <Toaster/>
         </div>
     </div>
   )

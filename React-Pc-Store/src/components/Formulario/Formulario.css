@@ -1,0 +1,10 @@
+header .form-label {
+  width: 80px; }
+
+header .formulario {
+  border: solid 1px; 
+  background-color: white;
+}
+
+header .formulario:hover {
+  background-color: #f0e1ff; }
