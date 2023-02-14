@@ -1,5 +1,5 @@
-import { useContext, useState } from 'react'
-import { CartContext, useCartContext } from '../../../Context/CartContext'
+import { useState } from 'react'
+import { useCartContext } from '../../../Context/CartContext'
 import Contador from '../contador/contador'
 import { Link } from "react-router-dom"
 

@@ -2,9 +2,7 @@ import React from "react";
 import {useState , useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import CardList from "../CardList/CardList";
-
 import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
-import { gFetch } from "../../Utils/gFetch";
 import Loader from "../Loader/Loader";
 
 

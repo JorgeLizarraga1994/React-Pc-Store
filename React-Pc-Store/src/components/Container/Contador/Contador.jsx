@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import swal from 'sweetalert'
 import { Toaster, toast} from 'react-hot-toast'
 
 
