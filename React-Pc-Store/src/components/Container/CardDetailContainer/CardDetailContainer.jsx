@@ -15,8 +15,6 @@ const CardDetailContainer = ( ) => {
     getDoc(queryDoc)
     .then(results => setProducto ({id: results.id, ...results.data()}))
     .catch(err => console.error(err)) 
-
-    
   }, [])
   console.log(producto)
   return (

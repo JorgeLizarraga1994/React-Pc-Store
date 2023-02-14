@@ -11,12 +11,9 @@ const CardDetail = ({producto}) => {
 
     const onAdd = (cant) => {
         console.log(cant)
-      //Agregar al carrito
     agregarAlCarrito({...producto, cantidad: cant})
     setIsInCount(false)  
 }       
-
-    
 
 return (
     <div className="container">
@@ -35,18 +32,15 @@ return (
                 </div>
                 <div className="col-10 m-5">
                     {isInCount ? 
-                        <Contador onAdd={onAdd} />
-                                            
+                        <Contador onAdd={onAdd} />                       
                     : 
-                        <>
-                            
+                        <>   
                                 <Link to={'/Carrito'}>
                                     <button className="btn btn-outline-primary m-2">Ir Al carrito</button>
                                 </Link>
                                 <Link to={'/'}>
                                     <button className="btn btn-outline-success m-2">Seguir comprando</button>
                                 </Link>
-
                         </>
                     }
                 </div>

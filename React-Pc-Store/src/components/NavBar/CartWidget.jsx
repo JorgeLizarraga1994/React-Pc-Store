@@ -8,7 +8,7 @@ const CartWidget = () => {
   
   return (
     <>
-    <Link to='/Carrito'><a href="#"><img className='tamañoImg' src="../../../shoppingcart1_114878.svg" alt="" /></a></Link>
+    <Link to='/Carrito'><img className='tamañoImg' src="../../../shoppingcart1_114878.svg" alt="" /></Link>
     {cantidadTotal() != 0 && cantidadTotal()}
       
       

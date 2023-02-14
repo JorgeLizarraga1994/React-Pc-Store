@@ -20,7 +20,7 @@ return (
                                         <label className="col-2 m-4  d-flex justify-content-center align-items-center"> ${prod.precio}</label>
                                         <button className="col-1 m-4 btn btn-danger" onClick= {() => eliminarItem(prod.id)}>X</button>
                                     </div>
-                              </div> )}
+                                </div> )}
                               { precioTotal() == 0 ?  
                               <div className="container d-flex border col-5 rounded-4">
                                     <div className="row">

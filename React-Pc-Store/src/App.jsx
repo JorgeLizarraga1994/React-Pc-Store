@@ -26,7 +26,6 @@ function App() {
                 <Carrousel/>
                 <Toaster position= 'top-right' 
                           toastOptions={{
-                            // Define default options
                             className: '',
                             duration: 2000,
                             style: {

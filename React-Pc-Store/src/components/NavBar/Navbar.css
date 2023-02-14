@@ -12,9 +12,36 @@
 }
 .nav-link{
     color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
 }
 
 .tamañoImg{
     margin-left: 50px;
     height: 45px;
+}
+
+#logo {
+    width: 80%;
+    font-size: 30px;
+    float: left;
+    margin-top: 15px;
+    color: black;
+}
+#logo img{
+    display: block;
+    float: left;
+    height: 60px;
+    margin-top: -10px;
+    animation: girar infinite 20s linear ;
+    
+}
+@keyframes girar{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

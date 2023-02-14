@@ -19,8 +19,7 @@ export const CardListContainer = ( ) => {
                 const queryCollectionFilter = id ?  query(queryCollection, where('categoria', '==', id)) : queryCollection         
                     
                 getDocs(queryCollectionFilter)
-                .then(respuestaPromesa => {
-                    // console.log(respuestaPromesa)       
+                .then(respuestaPromesa => {    
                     setProductos(respuestaPromesa.docs.map(prod => ( { id: prod.id, ...prod.data() } )))
                 })        
                 .catch(err => console.log(err))
@@ -32,8 +31,7 @@ export const CardListContainer = ( ) => {
     return (
         <div className="container d-flex pt-5">
             <div className="row">  
-                {   loading ? <Loader/> : <CardList  key = {productos.key} productos = {productos}/> 
-                    
+                {   loading ? <Loader/> : <CardList  key = {productos.key} productos = {productos}/>  
                 }
             </div>
         </div>    
