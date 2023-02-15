@@ -1,7 +1,7 @@
 # Proyecto React Pc Store
 Este repositorio almacena un e-commerce hecho para el curso de React-js de Coderhouse.
 
-En primera instancia la pagina web tendra un funcionamiento de agregar objetos a un carrito que nos almacenara los productos, sus cantidades y el precio para luego hacer la compra del producto.
+En primera instancia la pagina web tendra la acción de agregar objetos a un carrito que nos almacenara los productos, sus cantidades y el precio para luego hacer la compra del producto.
 
 En segunda instancia la idea es crear un login de usuario y contraseña que nos permita acceder a nuestra cuenta, donde podremos acceder a nuestros datos personales, nuestros pedidos realizados, configuración de envios y pagos, etc.
 
