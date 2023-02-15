@@ -12,10 +12,6 @@ En segunda instancia la idea es crear un login de usuario y contraseña que nos 
 * JavaScript
 * React-JS (Framework) 
 
-
-
-
-
 ## Pagina web subida a Netlify
 ---
 ### [https://reactpcstore.netlify.app/](https://reactpcstore.netlify.app/)
@@ -36,4 +32,9 @@ ___
 * @types/react-dom v18.0.9
 * @vitejs/plugin-react v3.0.0
 * vite v4.0.0
+
+## GitHub repositorio
+---
+---
+### https://github.com/JorgeLizarraga1994/React-Pc-Store.git
 
