@@ -31,14 +31,11 @@ const CartContainer = () => {
     realizarCompra()
   }
   const handleOnChange = (evt) => {
-    console.log(evt.target.nombre)
-    console.log(evt.target.value)
     setDataForm({
       ...dataForm, 
       [evt.target.name]:  evt.target.value
     })
   }
-  console.log(dataForm)
 return (
   <>
         {  cartList.map( prod =>  <div key={prod.id} className="text-light m-5 align-items-center justify-content-center">                             
