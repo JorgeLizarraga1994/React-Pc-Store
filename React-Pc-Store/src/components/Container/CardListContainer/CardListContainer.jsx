@@ -27,7 +27,6 @@ export const CardListContainer = ( ) => {
             }
             firebaseQuerys()
         },[id])  
-    
     return (
         <div className="container d-flex pt-5">
             <div className="row">  

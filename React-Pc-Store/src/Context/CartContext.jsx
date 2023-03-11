@@ -36,27 +36,15 @@ export const CartContextProvider = ({children}) => {
     }
 
     const realizarCompra = () => {
-        swal({
-            title: "Estas seguro/a que quieres realizar la compra?",
-            text: "Una vez realizada la compra, se guardara en la sección mis pedidos",
-            icon: "warning",
-            buttons: true,
-            dangerMode: true,
-            })
-            .then((willDelete) => {
-            if (!willDelete) {
-                swal("Compra cancelada");
-                setCartList([])
-            } else {
-                swal("Compra realizada con exito, Muchas gracias!", {
+        swal(
+                swal("Orden generada con exito, Muchas gracias!", {
                 icon: "success",
-                })
+                }),
                 setCartList([])
-            }
-            });
+            );
     }
     return (
-        <CartContext.Provider value = {{cartList , agregarAlCarrito, vaciarCarrito, cantidadTotal, precioTotal, eliminarItem , realizarCompra }}>
+        <CartContext.Provider value = {{cartList , agregarAlCarrito, vaciarCarrito, cantidadTotal, precioTotal, eliminarItem}}>
             {children}
             
         </CartContext.Provider>
