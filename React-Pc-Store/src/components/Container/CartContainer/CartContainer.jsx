@@ -77,7 +77,8 @@ return (
                                         </div>
                                         <div>
                                             <div className="input-group input-group-dynamic pt-4">
-                                                <input name="apellido" type="text" id="apellido" className="form-control" placeholder="Ingrese su apellido" aria-label="Last Name..." required/>
+                                                <input name="apellido" type="text" id="apellido" className="form-control" placeholder="Ingrese su apellido" aria-label="Last Name..." value={dataForm.apellido} 
+                                                onChange = {handleOnChange} required/>
                                             </div>
                                         </div>     
                                         <div className="input-group input-group-dynamic pt-4">
