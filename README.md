@@ -1,7 +1,7 @@
 # Proyecto React Pc Store
 Este repositorio almacena un e-commerce hecho para el curso de React-js de Coderhouse.
 
-La intención fué crear una tienda de articulos electronicos donde el usuario es capaz de seleccionar los productos segun el filtro que elija( Notebooks, pc's, componentes de pc, sillas), ver los productos en detalle, agregar las cantidades que desee necesarias al carrito y poder borrarlas si no desea comprarlas, luego podra finalizar su orden de compra con el completado de un formulario.
+La intención fué crear una tienda de articulos electronicos donde el usuario es capaz de seleccionar los productos segun el filtro que elija( Notebooks, pc's, componentes de pc, sillas), ver los productos en detalle, agregar las cantidades que desee necesarias al carrito y poder borrarlas si no desea comprarlas, para luego finalizar su orden de compra con el completado de un formulario.
 
 ## Lenguajes utilizados
 ---
